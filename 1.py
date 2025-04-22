@@ -1,5 +1,11 @@
 
-def Operaciones (num1, num2, operador):
+def Operaciones (num1:float, num2:float, operador:float):
+    '''
+    Función que recibe dos números y un string que indica la operación
+    evalua el string y retorna el resultado de los números de a cuerdo
+    a la operación recibida.
+
+    '''
     if operador == "+":
         return num1 + num2
     elif operador == "-":
@@ -11,6 +17,7 @@ def Operaciones (num1, num2, operador):
 
 if __name__ == "__main__":
     
+    #Pide un input de 2 números y de un string que sería alguno de los símbolos de operación
     num1: float = float(input("Ingrese el primer número: "))
     num2: float = float(input("Ingrese el segundo número: "))
     operador: str = input("Ingrese el símbolo de la operación que quiere realizar (+, -, *, /)")

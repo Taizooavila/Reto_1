@@ -1,4 +1,11 @@
 def verificar_primos(lista:list)->list:
+    '''
+    Esta función recibe una lista de números y analiza si son primos,
+    dividiendolos por los enteros anteriores a la mitad (+1) del número
+    si alguno de estos numeros lo divide exactamente, este se elimina
+    de la copia de la lista y luego retorna esta lista (con los numeros primos)
+    '''
+
     primos:list = lista.copy()
     for i in lista:
         if int(i)==1 or int(i)==2 or int(i)==3: continue
@@ -9,5 +16,5 @@ def verificar_primos(lista:list)->list:
     return primos
 
 if __name__ == "__main__":
-    numeros = input("Ingrese los números que desea verificar separados por espacios: ").split(",")
+    numeros = input("Ingrese los números separados por espacios: ").split()
     print(verificar_primos(numeros))

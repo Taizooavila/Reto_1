@@ -1,4 +1,10 @@
 def mayor_suma(lista:list):
+    '''
+    Esta función recibe una lista de números e itera por cada uno de estos,
+    almacenando el número anterior a este y sumándolo, luego compara esta suma
+    con la más alta hasta el momento y almacena la más alta. Al final, retorna
+    la suma más alta que haya registrado.
+    '''
 
     num1:int = 0
     num2:int = 0
